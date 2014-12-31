@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div id="fb-root">
+			&nbsp;</div>
+		<script>
+		window.fbAsyncInit = function() {
+FB.init({appId: '768764669870540', status: true, cookie: true,
+xfbml: true});
+};
+    (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=768764669870540&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+	function share_me() 
+{
+    FB.ui
+(
+{
+      method: 'feed',
+      link: 'http://india.ni.com/2015?cid=Social-Company-IndiaSWA-2015contest',
+      picture: 'http://india.ni.com/sites/default/files/ni200200.jpg',
+      name: 'Happy New Year from National Instruments',
+      caption: 'ni.com.',
+      description: 'I just entered the Welcome 2015 contest by National Instruments India & have a chance to win exciting goodies. To participate, click on this link.'
+ },
+    function(response)
+{
+      if(response && response.post_id) 
+              {
+       self.location.href = 'http://india.ni.com/2015-finish'
+              }
+      else {
+        self.location.href = 'http://india.ni.com/2015'
+               }
+}
+);
+    
+}
+function Redirect_to_ni()
+{
+    window.location="http://india.ni.com/2015";
+}
+</script>
+		<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 750px;">
+			<tbody>
+				<tr>
+					<td colspan="2">
+						<p>
+							<img alt="Happy New Year" border="0" src="http://infinitebounce.com/fb-tab-hny.jpg" style="width: 750px; height: 200px;" /></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:370px;" align="center">
+					<p>&nbsp;</p>
+						<div class="fb-like-box" data-colorscheme="light" data-header="true" data-href="https://www.facebook.com/NatInstIndia" data-show-border="true" data-show-faces="true" data-stream="false">
+							&nbsp;</div>
+					</td>
+					<td "width:370px;" align="center" valign="middle">
+					<div onclick="share_me()" style="margin-top:10px;"><img id = "share_button2" src = "http://india.ni.com/sites/default/files/fbbutton.png"></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			&nbsp;</p>
+			<table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 750px;">
+				<tbody>
+					<tr>
+						<td valign="middle">
+							<img align="center" src="http://india.ni.com/sites/default/files/line-break.png">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+	</body>
+</html>
